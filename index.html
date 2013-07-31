@@ -1,0 +1,316 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+
+
+<head>
+    <title>Makam Quiz</title>
+    <meta name="robots" content="noindex" />
+    <style type="text/css">
+        body {
+            background: #FFFFFF;
+            text-align: center;
+        }
+
+        p {
+            background: #FFFFFF;
+            font-family: serif;
+            text-align: right;
+            color: #0000A0;
+            font-size: 16pt;
+
+        }
+
+        h1 {
+            background: #0000A0;
+            color: #FFFFFF;
+            font-weight: bold;
+            font-size: 18pt;
+            font-family: Arial;
+        }
+
+        h2 {
+            background: #FFFF00;
+            color: #000000;
+            font-weight: bold;
+            font-size: 30pt;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            color: #D5D5D5;
+            font-size: 16pt;
+            font-family: Tahoma, Arial, sans-serif;
+        }
+
+        h3 {
+            background: #D5D5D5;
+            color: #000000;
+            font-weight: bold;
+            font-size: 20pt;
+            font-family: Arial, sans-serif;
+        }
+        h5 {
+            background: #FFFFFF;
+            color: #0080FF;
+            font-weight: bold;
+            font-size: 16pt;
+            font-family: Arial, sans-serif;
+            text-align: left;
+        }
+        .img-right { float:right; margin: 5px; }
+        .img-left { float:left; margin: 5px; }
+        .wrap {
+            width: 100%;
+        }
+
+        .floatleft, .floatright {
+            float:left;
+            width: 30%;
+            background-color: #FFFFFF;
+            height: 400px;
+        }
+
+        .floatright {
+            background-color: #FFFFFF;
+            width: 70%;
+        }
+
+            /*
+
+             -------------------------------------------------------------
+
+             In-page demo CSS - see external CSS for actual relevant stuff.
+
+             --------------------------------------------------------------
+
+             */
+
+        #soundmanager-debug {
+            /* SM2 debug container (optional, makes debug more useable) */
+            position:absolute;position:fixed;*position:absolute;bottom:10px;right:10px;width:50em;height:18em;overflow:auto;background:#fff;margin:1em;padding:1em;border:1px solid #999;font-family:"lucida console",verdana,tahoma,"sans serif";font-size:x-small;line-height:1.5em;opacity:0.9;filter:alpha(opacity=90);
+        }
+
+        body {
+            font:75% normal verdana,arial,tahoma,"sans serif";
+        }
+        .rounded-corners
+        {
+            background-color:lightgrey;
+            width:200px;
+            height:50px;
+            padding:10px;
+
+            border-radius: 10px 10px 10px 10px;
+            -ms-border-radius: 10px 10px 10px 10px;
+            -moz-border-radius: 10px 10px 10px 10px;
+            -webkit-border-radius: 10px 10px 10px 10px;
+            -khtml-border-radius: 10px 10px 10px 10px;
+        }
+
+    </style>
+    <link rel="stylesheet" type="text/css" href="css/mp3-player-button.css" />
+    <script type="text/javascript" src="SoundMaster/soundmanager2.js"></script>
+    <script type="text/javascript" src="SoundMaster/mp3-player-button.js"></script>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script>
+        soundManager.setup({
+            // required: path to directory containing SM2 SWF files
+            url: 'swf/'
+        });
+    </script>
+
+</head>
+<body>
+<h1 title="Makam Quiz">Makam Quiz</h1>
+    <div class="wrap">
+        <div class= "floatleft">
+            <img class="img-left" src="pic/gx3651.jpg" width="289" height="600" alt="" title="" border="0" />\
+        </div>
+
+        <div class="floatright">
+            <p><b id="questionIndex">1/20</b></p>
+            <h5>
+                <br>
+                <input type="radio" name="prep" value="Ajam" checked>Ajam<br>
+                <input type="radio" name="prep" value="Bayat" >Bayat<br>
+                <input type="radio" name="prep" value="Hjaz" >Hjaz<br>
+                <input type="radio" name="prep" value="Nahwand" >Nahwand<br>
+                <input type="radio" name="prep" value="Rast" >Rast<br>
+                <input type="radio" name="prep" value="Saba" >Saba<br>
+                <input type="radio" name="prep" value="Siga" >Siga
+                <br><br><br>
+
+            <center><img id="load" src="pic/load.gif" width="64" height="64" alt="" hidden="true" title="" border="0" /></center>
+            <center><img id="play" src="pic/play.gif" width="64" height="64" alt="" hidden="true" title="" border="0" /></center>
+            </h5>
+            <button id="submit" class="rounded-corners">Submit</button>
+            <button class="rounded-corners" id="current" href="music/Ajam/Ajam (1).mp3">Next</button>
+            <br>
+            <br>
+            <br>
+            <br>
+            Copyright Ygal Bellaiche <a href="mailto:ygalbel@gmail.com?Subject=Maqam%20quiz">
+			Send Mail</a>
+            
+		    <br>
+            <br>
+            <br>
+            <!-- hitwebcounter Code START -->
+<a href="http://www.hitwebcounter.com/htmltutorial.php" target="_blank">
+<img src="http://hitwebcounter.com/counter/counter.php?page=4960445&style=0038&nbdigits=4&type=page&initCount=154" title="wim" Alt="wim"   border="0" >
+</a><br/>
+<!-- hitwebcounter.com --><a href="http://www.hitwebcounter.com/" title="Add Hit Stats" 
+target="_blank" style="font-family: Arial, Helvetica, sans-serif; 
+font-size: 10px; color: #707173; text-decoration: none ;"><em>Add Hit Stats</em>
+</a>   
+            
+        </div>
+
+    </div>
+    <script type="text/javascript">
+        var MakamList =["Ajam","Bayat","Rast","Hjaz",
+            "Nahwand","Saba","Siga"];
+        var makamMusic = [];
+        var maxFiles = 20;
+        var questionIndex = 1;
+        var maxQuestion = 5;
+        var mark = 0;
+        var currentMakam;
+        var currentId;
+        function calculateFileName(makamString, num) {
+            return "music/" + makamString + "/"
+                    + makamString +" (" + num + ").mp3";
+        }
+
+        function getCheckedValue(radioObj) {
+            if(!radioObj)
+                return "";
+            var radioLength = radioObj.length;
+            if(radioLength == undefined)
+                if(radioObj.checked)
+                    return radioObj.value;
+                else
+                    return "";
+            for(var i = 0; i < radioLength; i++) {
+                if(radioObj[i].checked) {
+                    return radioObj[i].value;
+                }
+            }
+
+
+            return "";
+        }
+
+        function calculateNext() {
+        	var result = new Object;
+            var num = Math.floor((Math.random()*MakamList.length));
+            var makamString = MakamList[num];
+            currentId = num;
+            num = Math.floor((Math.random()*maxFiles) + 1);
+            var FileName = calculateFileName(makamString, num);
+            result.fileName = FileName;
+            result.answerId = currentId 
+            
+            return result;
+        }
+
+        function checkRightAnswer(currentMakamId, choosenAnswer)
+        {
+            return MakamList[currentMakamId] == choosenAnswer;
+        }
+   soundManager.onready(function() {
+  for (var i=0; i <= maxQuestion; i++)
+			{
+				
+				currentMakam = calculateNext();
+            	arr = new Object();
+				arr.soundId = i + 'a'; 
+				soundManager.createSound({
+                									id: i + 'a',
+                 								    url: currentMakam.fileName,
+                 								    autoLoad: true,
+                 								    onplay: function() {
+                 									    $('#play').attr("hidden", false);
+                									},
+                									onfinish:function()
+									                {
+									                    $('#play').attr("hidden", true);
+									                }
+									                 								    });
+                arr.answerId = currentMakam.answerId;
+                makamMusic.push(arr);
+			}    	
+		
+});
+    
+        document.getElementById("current").onclick = function () {
+        	
+            //var link = document.getElementById("current");
+            currentMakam = makamMusic.pop();// calculateNext();
+            currentId = currentMakam.answerId;
+            //   link.setAttribute("href", currentMakam);
+            $('#submit').attr("disabled", false);
+            $('#current').attr("disabled", true);
+            /*soundManager.createSound({
+                id: questionIndex,
+                url: currentMakam,
+                whileplaying: function() {
+
+                    $('#load').attr("hidden", true);
+                    $('#play').attr("hidden", false);
+                },
+                onplay: function() {
+                    $('#load').attr("hidden", false);
+                },
+                onfinish:function()
+                {
+                    $('#play').attr("hidden", true);
+                }
+
+            });*/
+
+     //       document.getElementById('makam').setAttribute('url', currentMakam);
+            soundManager.play(currentMakam.soundId);
+
+            return false;
+        }
+
+       /* document.getElementById("current2").onclick = function() {
+            var link = document.getElementById("current2");
+            link.setAttribute("href", currentMakam);
+            return false;
+        }*/
+
+        function riseQuestionIndex() {
+            questionIndex++;
+            $("#questionIndex").html(questionIndex + "/" + maxQuestion);
+        }
+        document.getElementById("submit").onclick = function() {
+            $('#submit').attr("disabled", true);
+            $('#current').attr("disabled", false);
+            var checked;
+            checked = getCheckedValue(document.getElementsByName("prep"));
+            if(checkRightAnswer(currentId , checked))   // good answer
+            {
+                alert("Good");
+                mark++;
+            }
+            else                                        // bad answer
+            {
+                alert("No Good\nRight Answer is: " + MakamList[currentId]);
+            }
+
+            if(questionIndex == maxQuestion) // finish!
+            {
+                alert("Your Grade is: " + mark);
+            }
+            riseQuestionIndex();
+            return false;
+        }
+
+      //  soundManager.onloadstart:function( document.getE)
+    </script>
+
+</body>
+</html>

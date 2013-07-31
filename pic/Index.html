@@ -1,0 +1,38 @@
+<div style="display:none; color:white; font-size:1px;" id="HtmlAreaEditor">[zipedit]</div>
+
+
+<title>LTE Comp results</title>
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<!--[if lt IE 9]><script language="javascript" type="text/javascript" src="Plugin/jquery/plugins/excanvas.js"></script><![endif]-->
+<script language="javascript" type="text/javascript" src="Plugin/jquery/jquery.min.js"></script>
+<script language="javascript" type="text/javascript" src="Plugin/jquery/jquery.jqplot.min.js"></script>
+<script type="text/javascript" src="Plugin/jquery/plugins/jqplot.barRenderer.min.js"></script>
+<script type="text/javascript" src="Plugin/jquery/plugins/jqplot.categoryAxisRenderer.min.js"></script>
+<script type="text/javascript" src="Plugin/jquery/plugins/jqplot.pointLabels.min.js"></script>
+
+<script type="text/javascript" src="Plugin/jquery/plugins/jqplot.dateAxisRenderer.min.js"></script>
+<script type="text/javascript" src="Plugin/jquery/plugins/jqplot.canvasTextRenderer.min.js"></script>
+<script type="text/javascript" src="Plugin/jquery/plugins/jqplot.canvasAxisTickRenderer.min.js"></script>
+<link rel="stylesheet" type="text/css" href="Plugin/jquery/jquery.jqplot.css">
+<script type="text/javascript" src="Plugin/jquery/plugins/jqplot.canvasTextRenderer.min.js"></script>
+<script type="text/javascript" src="Plugin/jquery/plugins/jqplot.canvasAxisLabelRenderer.min.js"></script>
+<script type="text/javascript" src="Main.js"></script>
+<style type="text/css">
+    #canvas_container {
+        width: 500px;
+        border: 1px solid #aaa;
+    }
+</style>
+<b> <div style="text-align: center; "><b><u><font size="5" face="verdana, arial, helvetica, sans-serif">AComp Lte Results</font></u></b></div>
+    <div><b><br></b></div>
+    <div><b>Choose benchmark</b>&nbsp;<select>
+    <option value="ForwardingCapcityBytesec">ForwardingCapcityBytesec</option>
+    <option value="ForwardingDelayDLsec">ForwardingDelayDLsec</option>
+    <option value="Jitter">Jitter</option>
+    <option value="PacketLossRatio" selected="">PacketLossRatio</option>
+    <option value="ThroughputByteSec" selected="">ThroughputByteSec</option>
+    <option value="Goodput" selected="">Goodput</option>
+</select></div></b><div><font face="Arial" size="2"><span style="white-space: pre;"><br></span></font><font face="times new roman, times, serif"><b>Distance&nbsp;<span class="Apple-tab-span" style="white-space: pre;">			</span></b><input type="checkbox" name="distGroup" id="300" value="300">300
+    <input type="checkbox" name="distGroup" id="5000" value="5000">5000<br>
+    <b>Allot&nbsp;<span class="Apple-tab-span" style="white-space:pre">			</span></b><input type="checkbox" name="allotGroup" id="allot" value="allot">allot
+    <input type="checkbox" name="allotGroup" id="normal" value="normal">normal<br><b>Number of Ues&nbsp;<span class="Apple-tab-span" style="white-space:pre">	</span></b><input type="checkbox
